@@ -30,4 +30,4 @@ if __name__ == "__main__":
     new_data_text2 = "terror suspects face arrest ......"
 
     similarity_scores = simple_text_model.evaluate_similarity(new_data_text1, new_data_text2)
-    print(similarity_scores)
+   

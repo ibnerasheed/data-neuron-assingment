@@ -75,7 +75,7 @@ tuner.search([train_embeddings1, train_embeddings2], train_concatenated,
 
 
 best_hps = tuner.get_best_hyperparameters(num_trials=1)[0]
-print(f"The best hyperparameters are: {best_hps}")
+
 
 
 best_model = tuner.get_best_models(num_models=1)[0]
