@@ -87,9 +87,13 @@ best_model.fit([train_embeddings1, train_embeddings2], train_concatenated,
                batch_size=32)
 
 best_model.save('best_siamese_model.keras')
-# best_model.save('best_siamese_model.keras')
+
 
 
 test_concatenated_predictions = best_model.predict([test_embeddings1, test_embeddings2])
 similarity_scores = cosine_similarity(test_concatenated_predictions[:, :768], test_concatenated_predictions[:, 768:])
-print(similarity_scores)
+
+
+
+
+
